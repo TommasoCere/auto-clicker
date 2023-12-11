@@ -18,8 +18,10 @@ def number_of_clicks():
             
 def click(x, y, n):
     for i in range(n):
-        pyautogui.click(x, y)
-        time.sleep(1)
+        # singolo click
+        pyautogui.leftClick(x, y)
+        #pyautogui.click(x, y)
+        time.sleep(0.5)
         
 def main():
     x, y = get_mouse_coordinates()
